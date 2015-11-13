@@ -1,0 +1,405 @@
+
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+li{
+	list-style-type:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+.clear{
+	clear:both;
+}
+
+i.fa{
+	margin-right:10px;
+}
+
+i.delete, i.edit{
+	background:#00c7f9;
+	padding:5px 10px;
+	border-radius:3px;
+	color:#fff;
+	cursor:pointer;
+}
+
+i.delete:hover, i.edit:hover{
+	color:rgba(255,255,255,.7) !important;
+}
+
+#container{
+	width:100%;
+}
+
+/*==============LOGIN:START====================*/
+#login-form{
+	width:400px;
+	margin:50px auto;
+	border:1px solid #ccc;
+	background:#ecf0f5;
+	padding:10px;
+	border-radius:10px;
+}
+/*==============LOGIN:END====================*/
+
+/*=============CONTAINER-LEFT:START=============*/
+#container-left{
+	width:230px;
+	float:left;
+	height:100%;
+	background:#222d32;
+}
+
+#container-left .logo{
+	display:block;
+	color:#fff;
+	font-size:25px;
+	height:50px;
+	font-weight:700;	
+	background:#0C90B0;
+	line-height:50px;
+	text-align:center;
+}
+
+#container-left #user-panel{
+	display:block;
+}
+
+.sidebar-menu>li.menu-header{
+	text-transform:uppercase;
+	color: #fff;
+    background: #1a2226;
+	font-weight:700;
+	text-align:center;
+	font-size:14px;
+	padding:10px 0;
+}
+
+.sidebar-menu li a{
+	position:relative;
+	text-decoration:none;
+	color:#b8c7ce;
+	display:block;
+	padding-top:13px;
+	padding-bottom:13px;
+	padding-left:15px;
+	font-size:13px;
+	border-left:3px solid transparent;
+}
+
+.sidebar-menu>li>a:hover{
+	color:#fff;
+	background:#1e282c;
+	border-left-color:#3c8dbc;
+}
+
+.sidebar-menu li ul.sub_menu li{
+	background:#2c3b41;
+}
+
+.sidebar-menu li ul.sub_menu>li>a:hover{
+	color:#fff;
+}
+
+.sidebar-menu li>a>.pull-right{
+	position:absolute;
+	top:50%;
+	margin-top:-9px;
+	right:10px;
+	color:#fff;
+	padding:2px 6px;
+	border-radius:2px;
+	font-size:10px;
+	font-weight:bold;
+}
+
+.bg-yellow{
+	background:#f39c12;
+}
+/*=============CONTAINER-LEFT:END=============*/
+
+/*=============CONTAINER-LEFT:START=============*/
+#container-right{
+	width:calc(100% - 230px);
+	height:100%;
+	float:left;
+}
+
+#container-right .user-header{
+	width:100%;
+	height:50px;
+	background:#049fc5;
+}
+
+#container-right .user-header .user-header-info{
+	float:right;
+	padding:7.5px;
+	position:relative;
+	height:35px;
+	width:130px;
+	text-align:center;
+	cursor:pointer;
+}
+
+#container-right .user-header .user-header-info:hover{
+	background:#00ace6;
+}
+
+#container-right .user-header .user-header-info span{
+	float:left;
+	line-height:35px;
+	font-size:14px;
+	padding-right:35px;
+	color:#fff;
+}
+
+#container-right .user-header .user-header-info img{
+	position:absolute;
+	float:right;
+	right:10px;
+	border-radius:50%;
+	background:#f1f1f1;
+}
+
+#container-right #content{
+	width:100%;
+	background:#ecf0f5;
+	border-bottom:1px solid #ccc;
+	box-sizing:border-box;
+	padding:10px 15px;
+	padding-bottom:35px;
+}
+
+#content .content-header{
+	display:block;
+	font-size:23px;
+	margin-bottom:20px;
+}
+
+#content .box{
+	width:100%;
+	border-top:3px solid #3c8dbc;
+	border-bottom:3px solid #3c8dbc;
+	border-radius:3px;
+	background:#fff;
+}
+
+.box table{
+	border-spacing:0;
+	border-collapse:collapse;
+	display:table;
+	background-color:transparent;
+}
+
+.box table.table-border{
+	background:#FFF;
+	width:100%;
+	border: 1px solid #f4f4f4;
+}
+
+.box table tr td{
+	padding:10px;
+	color:rgba(102,102,102,1);
+}
+
+.box table thead tr td, #content table tfoot tr td{
+	font-weight:bold;
+	font-size:13px;
+}
+
+.box table tbody tr td i:hover{
+	color:#f00;
+}
+
+.box .item-no-view{
+	color:#00c7f9;
+	font-style:italic;
+}
+
+.box .item-viewed{
+	color:rgba(102,102,102,1);
+}
+
+.box table tr td a:hover{
+	color:#f00;
+}
+
+/*--------------HOA DON:START--------------*/
+/*---------------RECEIPT-VIEWER:START-----------------*/
+#content #receipt-viewer{
+	opacity:0;
+	position:fixed;
+	background:rgba(204,204,204,.4);
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	pointer-events:none;
+}
+
+#content #receipt-viewer .receipt{
+	margin:50px auto;
+	width:600px;
+	background:#fff;
+	border-radius:10px;
+	border:2px solid #f4f4f4;
+}
+
+#content #receipt-viewer .receipt .r-header{
+	position:relative;
+	display:block;
+	border-bottom:1px solid #f4f4f4;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:16px;
+	font-weight:700;
+}
+
+.r-header .r-close{
+	position:absolute;
+	right:10px;
+	font-size:30px;
+	top:2px;
+	height:33px;
+	width:33px;
+	border:1px solid #f4f4f4;
+	border-radius:50%;
+	color:rgba(102,102,102,.3);
+	cursor:pointer;
+}
+
+.r-header .r-close:hover{
+	color:#999;
+}
+
+.r-header a i{
+	margin-top:.5px;
+}
+
+#content #receipt-viewer .receipt .r-body{
+	height:300px;
+}
+/*---------------RECEIPT-VIEWER:END-----------------*/
+/*--------------HOA DON:END--------------*/
+
+/*--------------NHOM SAN PHAM:START------------------*/
+.box form{
+	margin:10px;
+}
+.box form label, input[type=text], input[type=file], input[type=password], textarea, select, button{
+	display:block;
+}
+
+.box form label{
+	margin-bottom:7px;
+	font-size:13px;
+	font-weight:700;
+}
+
+.box form label.title{
+	text-align:center;
+	padding-bottom:15px;
+	margin-bottom:15px;
+	font-size:18px;
+	border-bottom:1px solid #ccc;
+}
+
+.box form input[type=text]{
+	font-size:14px;
+	padding-left:12px;
+	border-radius:2px;
+	height:34px;
+	width:100%;
+	color:#555;
+	border:1px solid #ccc;
+	box-sizing:border-box;
+	margin-bottom:20px;
+}
+
+.box form input[type=password]{
+	font-size:14px;
+	padding-left:12px;
+	border-radius:2px;
+	height:34px;
+	width:100%;
+	color:#555;
+	border:1px solid #ccc;
+	box-sizing:border-box;
+	margin-bottom:20px;
+}
+
+.box form input[type=file]{
+	font-size:14px;
+	padding-left:12px;
+	border-radius:2px;
+	height:34px;
+	width:100%;
+	color:#555;
+	border:1px solid #ccc;
+	box-sizing:border-box;
+	margin-bottom:20px;
+}
+
+.box form button[type=submit]{
+	border:none;
+	color:#fff;
+	border-radius:3px;
+	background:#3c8dbc;
+	padding:10px 20px;
+	box-sizing:border-box;
+}
+
+.box form button[type=submit]:hover{
+	background:#367fa9;
+}
+
+.box form input[type=checkbox]{
+	margin-bottom:20px;
+}
+.box form select{
+	font-size:14px;
+	padding-left:12px;
+	border-radius:2px;
+	height:34px;
+	width:100%;
+	color:#555;
+	border:1px solid #ccc;
+	box-sizing:border-box;
+	margin-bottom:20px;
+}
+
+.box .forget_pass{
+	display:block;
+	margin-bottom:20px;
+}
+
+.box .forget_pass a{
+	color:#000;
+}
+
+.box .forget_pass a:hover{
+	color:#f00;
+}
+/*--------------NHOM SAN PHAM:END--------------------*/
+/*=============CONTAINER-LEFT:END=============*/
+
+
+/*=============FOOTER:START===================*/
+#footer{
+	padding-left:20px;
+	height:50px;
+	font-size:14px;
+	line-height:50px;
+}

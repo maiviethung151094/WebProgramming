@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Admin - THÊM LOẠI SẢN PHẨM</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css"/>
+        <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="js/effect.js"></script>
+    </head>
+    
+    <body>
+    	<div id="container">
+        	<div id="container-left">
+            	<span class="logo">
+                	LUXUBU.VN
+                </span>
+                <div id="user-panel">
+                	<ul class="sidebar-menu">
+                    	<li class="menu-header">menu</li>
+                        <li>
+                        	<a href="#"><i class="fa fa-shopping-cart"></i>Hóa đơn
+                        	<small class="pull-right bg-yellow">2</small>
+                            </a>
+                        </li>
+                        
+                        <li class="treeview">
+                        	<a href="#"><i class="fa fa-server"></i>Nhóm sản phẩm
+                            </a>
+                            <ul class="sub_menu">
+                            	<li>
+                                	<a href="#">
+                                		<i class="fa fa-circle-thin"></i>Thêm nhóm sản phẩm
+                                	</a>
+                                </li>
+                                <li>
+                                	<a href="#">
+                                		<i class="fa fa-circle-thin"></i>Xem DS nhóm sản phẩm
+                                	</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="treeview">
+                        	<a href="#"><i class="fa fa-cubes"></i>Loại sản phẩm
+                            </a>
+                            <ul class="sub_menu">
+                            	<li>
+                                	<a href="#">
+                                		<i class="fa fa-circle-thin"></i>Thêm loại sản phẩm
+                                	</a>
+                                </li>
+                                <li>
+                                	<a href="#">
+                                		<i class="fa fa-circle-thin"></i>Xem DS loại sản phẩm
+                                	</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="treeview">
+                        	<a href="#"><i class="fa fa-cube"></i>Sản phẩm
+                            </a>
+                            <ul class="sub_menu">
+                            	<li>
+                                	<a href="#">
+                                		<i class="fa fa-circle-thin"></i>Thêm sản phẩm
+                                	</a>
+                                </li>
+                                <li>
+                                	<a href="#">
+                                		<i class="fa fa-circle-thin"></i>Xem DS sản phẩm
+                                	</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                        	<a href="#"><i class="fa fa-user"></i>Tài khoản
+                            </a>
+                        </li>  
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div id="container-right">
+            	<div class="user-header">
+                	Super Admin chôn ở đây
+                </div>
+                
+                <div id="content"><!--start div:content-->
+                	<span class="content-header">Thêm loại sản phẩm</span>
+                    
+                    <div class="box"><!--start div:box-->
+                    	<form>
+                        	<label for="ten_nhom">Tên loại sản phẩm</label>
+                            <input type="text" name="ten_nhom_san_pham" id="ten_nhom" placeholder="Nhập tên loại sản phẩm"/>
+                            <label for="mo_ta_nhom">Mô tả về loại sản phẩm</label>
+                            <input type="text" name="ten_nhom_san_pham" id="mo_ta_nhom" placeholder="Nhập mô tả cho loại sản phẩm"/>
+                            <label>Hiển thị trong menu</label>
+                            <select>
+                            	<option value="1">Hiển thị</option>
+                                <option value="0">Không hiển thị</option>
+                            </select>
+                            <button type="submit"><i class="fa fa-upload"></i>Thêm loại sản phẩm</button>
+                        </form>
+                    </div><!--end div: box-->
+                    
+                    <div id="receipt-viewer"><!--start div:receipt-viewer-->
+                    	<div class="receipt">
+                        	<div class="r-header">
+                            	Chi tiết hóa đơn
+                                <a class="r-close"><i class="fa fa-times"></i></a>
+                            </div>
+                            
+                            <div class="r-body">
+                            	Đây là phần thân hóa đơn
+                            </div>
+                        </div>
+                    </div><!--end div:receipt-viewer-->
+                </div><!--end div: content-->
+                <div id="footer">
+        			Bản quyền Luxubu.vn Copyright © 2015 bởi nhóm Dev
+        		</div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+</html>
