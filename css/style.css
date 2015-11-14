@@ -85,56 +85,7 @@ i.cart{
 	text-align:center;
 	font-size:40px;
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-	animation:logo 8s infinite;
 	text-shadow:0 0 3px #00ace6, 0 0 5px #0000FF;;
-}
-
-@keyframes logo{
-	0%		{transform: rotate(0deg);}
-	10%		{transform: rotate(20deg);}
-	25%		{transform: rotate(-25deg);}
-	35%		{transform: rotate(35deg);}
-	50%		{transform: rotate(-360deg);}
-	65%		{transform: rotate(35deg);}
-	75%		{transform: rotate(-25deg);}
-	85%		{transform: rotate(20deg);}
-	100%	{transform: rotate(0deg);}
-}
-
-@-webkit-keyframes logo{
-	0%		{transform: rotate(0deg);}
-	10%		{transform: rotate(20deg);}
-	25%		{transform: rotate(-25deg);}
-	35%		{transform: rotate(35deg);}
-	50%		{transform: rotate(-360deg);}
-	65%		{transform: rotate(35deg);}
-	75%		{transform: rotate(-25deg);}
-	85%		{transform: rotate(20deg);}
-	100%	{transform: rotate(0deg);}
-}
-
-@-moz-keyframes logo{
-	0%		{transform: rotate(0deg);}
-	10%		{transform: rotate(20deg);}
-	25%		{transform: rotate(-25deg);}
-	35%		{transform: rotate(35deg);}
-	50%		{transform: rotate(-360deg);}
-	65%		{transform: rotate(35deg);}
-	75%		{transform: rotate(-25deg);}
-	85%		{transform: rotate(20deg);}
-	100%	{transform: rotate(0deg);}
-}
-
-@-o-keyframes logo{
-	0%		{transform: rotate(0deg);}
-	10%		{transform: rotate(20deg);}
-	25%		{transform: rotate(-25deg);}
-	35%		{transform: rotate(35deg);}
-	50%		{transform: rotate(-360deg);}
-	65%		{transform: rotate(35deg);}
-	75%		{transform: rotate(-25deg);}
-	85%		{transform: rotate(20deg);}
-	100%	{transform: rotate(0deg);}
 }
 
 #group-header{
@@ -866,7 +817,6 @@ form.form-login button[type=submit]{
 
 /*=============NAV-TAB: START===============*/
 #wrapper>.wrapper-body>#nav-tab{
-	border-bottom:1px solid #ccc;
 }
 
 #wrapper>.wrapper-body>#nav-tab>ul{
@@ -887,5 +837,84 @@ form.form-login button[type=submit]{
 	padding:19px 20px;
 	cursor:pointer;
 }
-
 /*=============NAV-TAB: END===============*/
+
+/*=============NAV-INFO: START===============*/
+#nav-info{
+	position:relative;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	width:100%;
+	margin:auto;
+	padding:10px 0;
+}
+
+#nav-info>.nav-person-info table{
+	width:600px;
+	margin:auto;
+	padding:2px;
+	border:2px dotted #ccc;
+	border-radius:5px;
+}
+
+#nav-info>.nav-person-info> table tr td.nav-person-info-title{
+	text-align:center;
+	color:#555;
+	text-transform:uppercase;
+	text-align:center;
+	font-size:20px;
+}
+
+#nav-info>.nav-person-info table th{
+	position:relative;
+	background:rgba(204,204,204,.6);
+	padding:10px;
+	font-size:16px;
+	color:rgb(34, 194, 34);
+}
+
+#nav-info>.nav-person-info table th span{
+	position:absolute;
+	right:10px;
+	font-size:12px;
+	font-weight:normal;
+	top:12px;
+}
+
+#nav-info>.nav-person-info table th span a{
+	color:blue;
+	margin:0 2px;
+}
+
+#nav-info>.nav-person-info table th span a:hover{
+	color:red;
+	text-decoration:underline;
+}
+
+#nav-info>.nav-person-info table tr td{
+	position:relative;
+	padding:10px;
+}
+
+#nav-info>.nav-person-info table tr td i.user-actived{
+	margin-left:10px;
+	position:absolute;
+	color:#09F;
+	font-size:19px;
+}
+
+#nav-info>.nav-person-info table tr td a.change-pass{
+	font-size:14px;
+	color:#03F;
+}
+
+#nav-info>.nav-person-info table tr td a.change-pass:hover{
+	color:#F00;
+	font-style:italic;
+	text-decoration:underline;
+}
+
+#nav-info>.nav-person-info table tr td.vl-info{
+	font-size:14px;
+}
+/*=============NAV-INFO: END===============*/
