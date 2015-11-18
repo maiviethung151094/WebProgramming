@@ -1,0 +1,27 @@
+#slideshow{
+	width:1020px;
+	height:400px;
+	margin:auto;
+	margin-bottom:40px;
+}
+
+#gallery{
+	height:400px;
+	overflow:hidden;
+}
+
+#slides{
+	height:400px;
+	width:4000px;
+}
+
+.slide{
+	width:1020px;
+	overflow:hidden;
+	float:left;
+}
+
+.slide img{
+	width:1020px;
+	height:400px;
+}

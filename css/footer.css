@@ -1,0 +1,15 @@
+/* CSS Document */
+#footer{
+	width:1020px;
+	margin:auto;
+	height:100px;
+	background:#f3f3f3;
+}
+
+#footer p.ban-quyen{
+	margin-left:20px;
+	font-size:14px;
+	display:block;
+	line-height:100px;
+}
+

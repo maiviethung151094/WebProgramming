@@ -3,7 +3,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Luxubu - Xem chi tiết sản phẩm</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="css/header.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slideshow.css"/>
+        <link rel="stylesheet" type="text/css" href="css/wrapper.css"/>
+        <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+        
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
         <script src="js/jquery-2.1.4.js"></script>
         <script type="text/javascript" src="js/header-user.js"></script>
@@ -26,6 +31,15 @@
                     	<p class="group-header-info-phone"><i class="fa fa-phone-square"></i> 0975.476.986</p>
                         
                         <ul class="group-header-info-user">
+                     	   <li>
+                            	<a style="border-right:1px solid #fff" class="get-form-logout">
+                                	<i class="fa fa-user"></i>Mai Viết Hùng
+                                </a>
+                                <div id="logout">
+                                	<a href="trang-ca-nhan.html">Trang cá nhân</a>
+                                    <a href="#">Đăng xuất</a>
+                                </div>
+                            </li>
                         	<li>
                             	<a style="border-right:1px solid #fff" class="get-form-login">
                                 	<i class="fa fa-sign-in"></i>Đăng nhập
@@ -125,37 +139,39 @@
                 </div>
                 
                 <div class="wrapper-body">
-                	<div class="prodcuct-image">
-                    	<img src="sanpham/image/1.jpg" />
-                    </div>
-                    
-                    <div class="product-info">
-                    	<p class="product-info-name">áo sơ mi nam cá tính</p>
-                        <form class="form-product-info">
-                            	<label>Mã sản phẩm:</label>
-                                <label class="info">0001</label><br />
-                            
-                            	<label>Mô tả sản phẩm:</label>
-                                <label class="info">Áo sơ mi dành cho các bạn trẻ mang phong cách cá tính</label><br />
-                            
-                            	<label>Số lượng:</label>
-                                <select name="so-luong">
-                                	<option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select><br />
-                            
-                            	<label>Giá:</label>
-                                <label class="info price cl-blue">280.000 VNĐ</label><br />
-                            
-                            <button type="submit">Thêm vào giỏ hàng</button>
+                	<div class="product-detail">
+                        <div class="prodcuct-image">
+                            <img src="sanpham/image/1.jpg" />
+                        </div>
                         
-                        </form>
+                        <div class="product-info">
+                            <p class="product-info-name">áo sơ mi nam cá tính</p>
+                            <form class="form-product-info">
+                                    <label>Mã sản phẩm:</label>
+                                    <label class="info">0001</label><br />
+                                
+                                    <label>Mô tả sản phẩm:</label>
+                                    <label class="info">Áo sơ mi dành cho các bạn trẻ mang phong cách cá tính</label><br />
+                                
+                                    <label>Số lượng:</label>
+                                    <select name="so-luong">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select><br />
+                                
+                                    <label>Giá:</label>
+                                    <label class="info price cl-blue">280.000 VNĐ</label><br />
+                                
+                                <button type="submit">Thêm vào giỏ hàng</button>
+                            
+                            </form>
+                        </div>
+                        
+                        <div class="clear"></div>
                     </div>
-                    
-                    <div class="clear"></div>
                 </div>
                 <div class="wrapper-foot">
                 </div>
