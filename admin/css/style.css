@@ -392,6 +392,15 @@ i.delete:hover, i.edit:hover{
 .box .forget_pass a:hover{
 	color:#f00;
 }
+
+.box div.check_remember{
+	position:relative;
+}
+
+.box div.check_remember span{
+	position:absolute;
+	margin-left:5px;
+}
 /*--------------NHOM SAN PHAM:END--------------------*/
 /*=============CONTAINER-LEFT:END=============*/
 

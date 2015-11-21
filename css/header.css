@@ -1,6 +1,5 @@
 .fixed_menu{
-	position:fixed;
-	top:0px;
+	top:0;
 	left:0;
 	right:0;
 }
@@ -16,6 +15,7 @@ div#frm-user{
 	width:870px;
 	margin-left:150px;
 	z-index:99999999;
+	box-sizing:border-box;
 }
 
 ul.group-header-info-user{
@@ -28,9 +28,9 @@ ul.group-header-info-user>li{
 }
 
 ul.group-header-info-user>li>ul.sub{
+	position:absolute;
 	border-top:2px solid #f00;
 	border-radius:3px 3px;
-	position:absolute;
 	display:none;
 	right:0;
 	animation:slideInUp .3s 1;
@@ -45,19 +45,19 @@ ul.group-header-info-user>li>a{
 	display:inline-block;
 	color:#fff;
 	font-size:15px;
-	margin:4px 0;
+	margin:3.5px 0;
 	padding:7px 10px;
 }
 
 ul.group-header-info-user>li>a:hover{
-	color:#600;
+	color:rgba(255,0,0,.8);
 }
 
 .group-header-info-user>li{
 	position:relative;
 }
 
-form.form-logout{
+div.form-logout{
 	width:200px;
 	padding:20px 20px 0 20px;
 	color:#555;
@@ -65,7 +65,7 @@ form.form-logout{
 	box-shadow:0 2px 8px 5px rgba(204,204,204,.7);
 }
 
-form.form-logout a{
+div.form-logout a{
 	display:block;
 	width:100%;
 	padding:10px 10px;
@@ -75,13 +75,13 @@ form.form-logout a{
 	border-top:1px solid #ccc;
 }
 
-form.form-logout a:hover{
+div.form-logout a:hover{
 	color:#f00;
 	background:#fff;
 	animation:pd-l-20-ani .8s 2;
 }
 
-form.form-login{
+div.form-login{
 	width:250px;
 	padding:20px;
 	color:#555;
@@ -89,12 +89,22 @@ form.form-login{
 	box-shadow:0 2px 8px 5px rgba(204,204,204,.7);
 }
 
-form.form-login label{
+div.form-login label{
 	display:block;
 	margin-bottom:5px;
 }
 
-form.form-login input[type=text]{
+div.form-login label.error{
+	display:block;
+	text-align:center;
+	height:35px;
+	line-height:35px;
+	background:#FFF;
+	color:#f00;
+	font-weight:bold;
+}
+
+div.form-login input[type=text]{
 	display:block;
 	width:100%;
 	box-sizing:border-box;
@@ -104,7 +114,7 @@ form.form-login input[type=text]{
 	color:#000;
 }
 
-form.form-login input[type=password]{
+div.form-login input[type=password]{
 	display:block;
 	width:100%;
 	box-sizing:border-box;
@@ -114,7 +124,7 @@ form.form-login input[type=password]{
 	color:#000;
 }
 
-form.form-login input[type=checkbox]{
+div.form-login input[type=checkbox]{
 	box-sizing:border-box;
 	margin-right:5px;
 	margin-bottom:10px;
@@ -122,22 +132,23 @@ form.form-login input[type=checkbox]{
 	color:#999;
 }
 
-form.form-login>div{
+div.form-login>div{
 	position:relative;
 }
 
-form.form-login>div>span{
+div.form-login>div>span{
 	position:absolute;
 }
 
-form.form-login>a.forget-password{
+div.form-login>a.forget-password{
 	display:block;
 	text-align:right;
 	color:#337ab7;
 	transition:.3s;
+	margin-bottom:5px;
 }
 
-form.form-login>a.register{
+div.form-login>a.register{
 	display:block;
 	border-top:1px solid #ccc;
 	border-bottom:1px solid #ccc;
@@ -146,20 +157,20 @@ form.form-login>a.register{
 	color:#03F;
 }
 
-form.form-login>a.register:hover{
+div.form-login>a.register:hover{
 	background:#fff;
 }
 
-form.form-login>a.register:hover{
+div.form-login>a.register:hover{
 	color:#f00;
 	animation:pd-l-20-ani .8s 2;
 }
 
-form.form-login>a.forget-password:hover{
+div.form-login>a.forget-password:hover{
 	color:#f00;
 }
 
-form.form-login button[type=submit]{
+div.form-login button[type=submit]{
 	display:block;
 	margin-top:10px;
 	margin-bottom:10px;
@@ -193,7 +204,7 @@ form.form-login button[type=submit]{
 }
 
 #logo a:hover{
-	animation: tada 1.2s infinite;
+	animation: tada 1.5s infinite;
 }
 
 #group-header{
@@ -269,12 +280,14 @@ p.group-header-info-phone{
 
 /*====================================================*/
 #menu-main{
-	height:80px;
+	height:40px;
+	margin-bottom:40px;
 }
 
 #menu{
+	position:relative;
 	background:#1e282c;
-	opacity:.95;
+	opacity:0.9;
 	width:1020px;
 	margin:auto;
 	height:40px;
@@ -299,7 +312,6 @@ p.group-header-info-phone{
 	line-height:40px;
 	text-transform:uppercase;
 	text-align:center;
-
 	color:#fff;
 	font-size:16px;
 }

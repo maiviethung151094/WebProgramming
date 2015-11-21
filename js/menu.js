@@ -45,9 +45,12 @@ $(window).ready(function(e) {
 $(window).ready(function(e) {
 	$(window).scroll(function(e) {
         if($(window).scrollTop()>=100){
+			$('#menu').css({'position':'fixed'});
 			$('#menu').addClass('fixed_menu');
-		}else
+		}else{
 			$('#menu').removeClass('fixed_menu');
+			$('#menu').css({'position':'relative'});
+		}
     });
 });
 

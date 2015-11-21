@@ -2,64 +2,74 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Luxubu - Xem chi tiết sản phẩm</title>
+        <title>Chi tiết sản phẩm</title>
         <link rel="stylesheet" type="text/css" href="css/main.css"/>
         <link rel="stylesheet" type="text/css" href="css/header.css"/>
         <link rel="stylesheet" type="text/css" href="css/slideshow.css"/>
         <link rel="stylesheet" type="text/css" href="css/wrapper.css"/>
         <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+        <link rel="stylesheet" type="text/css" href="css/forgetpass.css"/>
         
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
-        <script src="js/jquery-2.1.4.js"></script>
-        <script type="text/javascript" src="js/header-user.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+        
+		<script src="js/jquery-2.1.4.js"></script>
         <script type="text/javascript" src="js/slideshow.js"></script>
         <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/forgetpass.js"></script>
+        <script type="text/javascript" src="js/navi.js"></script>
         
     </head>
     
     <body>
     	<div id="container">
         	<div id="header">
+            	<div id="frm-user">
+               		<ul class="group-header-info-user">
+                    	<li>
+                    		<a style="border-right:1px solid #fff" class="get-form-logout">
+                                <i class="fa fa-user"></i>Mai Viết Hùng
+                            </a>
+                            <ul class="sub">
+                               	<li>
+                                    <div class="form-logout">
+                                        <a href="trang-ca-nhan.html"><i class="fa fa-home"></i>Trang cá nhân</a>
+                                        <a href="#"><i class="fa fa-sign-out"></i>Đăng xuất</a>
+                                    </div>
+                               	</li>
+                            </ul>
+                        </li>
+                       	<li>
+                        	<a style="border-right:1px solid #fff" class="get-form-login">
+                            	<i class="fa fa-user"></i>Đăng nhập
+                            </a>
+                            <ul class="sub">
+                                <li>
+                                    <div class="form-login">
+                                        <label>Email <i class="cl-red">(*)</i></label>
+                                        <input type="text" placeholder="Nhập email của bạn vào đây nè"/>
+                                        <label>Mật khẩu <i class="cl-red">(*)</i></label>
+                                        <input type="password" placeholder="Nhập mật khẩu vào ô này nè"/>
+                                        <div><input type="checkbox" /><span>Ghi nhớ đăng nhập</span></div>
+                                        <a class="forget-password">Quên mật khẩu?</a>
+                                        <label class="error">Lỗi tại đây</label>
+                                        <button type="submit" name="user-login" value="login">Đăng nhập</button>
+                                        <a href="#" class="register"><i class="fa fa-user-plus"></i>Đăng kí thành viên</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-shopping-cart"></i>Giỏ hàng (20)</a></li>
+                    </ul> 
+                </div>
             	<div id="logo">
-                	<p>
-                		Luxubu.vn
-                    </p>
+                	<a href="trang-chu.html">luxubu.vn</a>
                 </div><!--/end div logo-->
                 
                 <div id="group-header">
                 	<div id="group-header-info">
                     	<p class="group-header-info-phone"><i class="fa fa-phone-square"></i> 0975.476.986</p>
-                        
-                        <ul class="group-header-info-user">
-                     	   <li>
-                            	<a style="border-right:1px solid #fff" class="get-form-logout">
-                                	<i class="fa fa-user"></i>Mai Viết Hùng
-                                </a>
-                                <div id="logout">
-                                	<a href="trang-ca-nhan.html">Trang cá nhân</a>
-                                    <a href="#">Đăng xuất</a>
-                                </div>
-                            </li>
-                        	<li>
-                            	<a style="border-right:1px solid #fff" class="get-form-login">
-                                	<i class="fa fa-sign-in"></i>Đăng nhập
-                                </a>
-                                
-                                <form class="form-login">
-                                	<label>Email <i class="cl-red">(*)</i></label>
-                                    <input type="text" placeholder="Nhập email của bạn vào đây nè"/>
-                                    <label>Mật khẩu <i class="cl-red">(*)</i></label>
-                                    <input type="password" placeholder="Nhập mật khẩu vào ô này nè"/>
-                                    <div><input type="checkbox" /><span>Ghi nhớ đăng nhập</span></div>
-                                    <a href="#" class="forget-password"><i class="fa fa-forward"></i>Quên mật khẩu?</a>
-                                    <button type="submit">Đăng nhập</button>
-                                    <a href="#" class="register"><i class="fa fa-user-plus"></i>Đăng kí thành viên</a>
-                                </form>
-                            </li>
-                            
-                            <li><a href="#"><i class="fa fa-shopping-cart"></i>Giỏ hàng <span class="cl-red">(20)</span></a></li>
-                        </ul>
-                    </div>
+                    </div><!--end div group-header-info-->
                     
                     <div id="group-header-pr">
                     	<div class="pr1">
@@ -132,58 +142,129 @@
                     <div class="clear"></div>
                 </div><!--/ end div menu-->
             </div><!--/ end div menu-main-->
+            <div class="clear"></div>
             
             <div id="wrapper">
+            	<div id="navi">
+                	<ol>
+                        <li>Thời trang nam</li>
+                        <li>Áo sơ mi</li>
+                        <li>Áo sơ mi nam cá tính</li>
+                        <div class="clear"></div>
+                    </ol>
+                </div>
             	<div class="wrapper-head">
-                	<p class="cl-blue">thông tin sản phẩm</p>
+                	<p class="cl-blue">áo sơ mi nam cá tính</p>
+                    <div class="lc-red"></div>
                 </div>
                 
                 <div class="wrapper-body">
                 	<div class="product-detail">
-                        <div class="prodcuct-image">
-                            <img src="sanpham/image/1.jpg" />
+                        <div class="product-image">
+                        	<div class="gallery-small-image">
+                            	<div class="slides">
+                                	<div class="slide-image"><img src="sanpham/image/1.jpg" /></div>
+                                    <div class="slide-image"><img src="sanpham/image/2.jpg" /></div>
+                                    <div class="slide-image"><img src="sanpham/image/3.jpg" /></div>
+                                    <div class="slide-image"><img src="sanpham/image/4.jpg" /></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="product-info">
                             <p class="product-info-name">áo sơ mi nam cá tính</p>
-                            <form class="form-product-info">
-                                    <label>Mã sản phẩm:</label>
-                                    <label class="info">0001</label><br />
+                            <table class="form-product-info">
+                            	<tr>
+                                	<td class="col-left">Mã sản phẩm:</td>
+                                    <td>0001</td>
+                                </tr>
                                 
-                                    <label>Mô tả sản phẩm:</label>
-                                    <label class="info">Áo sơ mi dành cho các bạn trẻ mang phong cách cá tính</label><br />
+                                <tr>
+                                	<td class="col-left">Mô tả:</td>
+                                    <td>Áo sơ mi dành cho các bạn nam cá tính, sản phẩm thời trang gì gì đó.</td>
+                                </tr>
                                 
-                                    <label>Số lượng:</label>
-                                    <select name="so-luong">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select><br />
+                                <tr>
+                                	<td class="col-left">Số lượng:</td>
+                                    <td>
+                                    	<select>
+                                        	<option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </td>
+                                </tr>
                                 
-                                    <label>Giá:</label>
-                                    <label class="info price cl-blue">280.000 VNĐ</label><br />
+                                <tr>
+                                	<td class="col-left">Màu sắc:</td>
+                                    <td>
+                                    	<select>
+                                        	<option value="yellow">Vàng</option>
+                                            <option value="red">Đỏ</option>
+                                            <option value="black">Đen</option>
+                                        </select>
+                                    </td>
+                                </tr>
                                 
-                                <button type="submit">Thêm vào giỏ hàng</button>
-                            
-                            </form>
+                                <tr>
+                                	<td class="col-left">Kích thước:</td>
+                                    <td>
+                                    	<select>
+                                        	<option value="X">X</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                        </select>
+                                    </td>
+                                </tr> 
+                                
+                                <tr>
+                                	<td class="col-left">Giá:</td>
+                                    <td class="price">280.000 VNĐ</td>
+                                </tr>      
+                                <tr>
+                                	<td colspan="2"><button id="add-to-card">Thêm vào giỏ hàng</button></td>
+                                </tr>    
+                            </table>                                                   
                         </div>
-                        
                         <div class="clear"></div>
                     </div>
                 </div>
                 <div class="wrapper-foot">
                 </div>
             </div><!--/ end div wrapper-->
+            
             <div id="scrollTop">
-	            <i class="fa fa-chevron-circle-up cl-blue" title="Cuộn lên trên"></i>
+	            <i class="fa fa-angle-up" title="Cuộn lên trên"></i>
             </div>
             <div id="footer">
             	<p class="ban-quyen">
             		© Copyright 2015 Luxubu.vn - All rights reserved.
                 </p>
             </div><!--/ end div footer-->
+        </div>
+        
+        
+        <div id="form-forget-pass">
+        	<div class="form-main">
+            	<div class="fm-head">
+                	<span>Quên mật khẩu</span>
+                    <i class="fa fa-times exit"></i>
+                </div>
+                
+                <div class="fm-body">
+                	<form>
+                    	<label>Email đăng kí <i class="cl-red">(*)</i></label>
+                        <input type="text" placeholder="Nhập email bạn đăng kí vào đây để lấy lại mật khẩu"/>
+                        <label class="cl-red">Hiện thị lỗi ở đây</label>
+                        <button type="submit">Lấy lại mật khẩu</button>
+                    </form>
+                </div>
+                
+                <div class="fm-foot">
+                
+                </div>
+            </div>
         </div>
     </body>
 </html>
