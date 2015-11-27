@@ -24,7 +24,7 @@ $(window).ready(function(e) {
 				curIndex=0;
 				$('#slides').animate({'marginLeft':-position[curIndex]});
 			}
-		},5000
+		},4000
 	);
 });
 

@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="css/slideshow.css"/>
         <link rel="stylesheet" type="text/css" href="css/wrapper.css"/>
         <link rel="stylesheet" type="text/css" href="css/footer.css"/>
-        <link rel="stylesheet" type="text/css" href="css/forgetpass.css"/>
+        <link rel="stylesheet" type="text/css" href="css/modal.css"/>
         
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/animate.css"/>
@@ -17,6 +17,7 @@
         <script type="text/javascript" src="js/slideshow.js"></script>
         <script type="text/javascript" src="js/menu.js"></script>
         <script type="text/javascript" src="js/forgetpass.js"></script>
+        <script type="text/javascript" src="js/personalpape.js"></script>
         
     </head>
     
@@ -161,13 +162,13 @@
                         </div>
                     
                         <div id="nav-info">
-                            <div class="nav-person-info">
+                            <div class="nav-person-info nav-actived">
                                 <table border=0>
                                     <tr>
                                         <td colspan="2" class="nav-person-info-title">thông tin cá nhân</td>
                                     </tr>
                                     
-                                    <th colspan="2">Thông tin cơ bản<span>[<a href="#">Sửa</a>]</span></th>
+                                    <th colspan="2">Thông tin cơ bản<span>[<a class="edit-info">Sửa</a>]</span></th>
                                     <tr>
                                         <td>Họ và tên:</td><td class="vl-info">Mai Viết Hùng</td>
                                     </tr>
@@ -193,7 +194,7 @@
                                         </td>	
                                     </tr>
                                     <tr>
-                                        <td>Mật khẩu:</td><td><a href="#" class="change-pass">Đổi mật khẩu</a></td>
+                                        <td>Mật khẩu:</td><td><a class="change-pass">Đổi mật khẩu</a></td>
                                     </tr>
                                     <tr>
                                         <td>Ngày đăng ký: </td><td class="vl-info">14/11/2015</td>
@@ -206,6 +207,14 @@
                                         <td colspan="5" class="nav-card-info-title">lịch sử mua hàng</td>
                                     </tr>
                                     
+                                    <tr>
+                                    	<td colspan="5"><span class="no-card">Bạn chưa mua hàng ư, mua ngay kẻo lỡ hàng hot..:)</span></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    	<td colspan="5"><span class="go-home"><a href="#">Tới trang chủ</a></span></td>
+                                    </tr>
+                                    
                                     <tr class="head">
                                         <td></td>
                                         <td>STT</td>
@@ -214,66 +223,17 @@
                                         <td>Tổng tiền</td>
                                     </tr>
                                     
-                                    <tr>
-                                        <td><i class="fa fa-angle-down"></i></td>
+                                    <tr class="receipt-detail">
+                                        <td><i class="fa fa-angle-down detail-down"></i></td>
                                         <td>1</td><td>16/11/2015</td>
                                         <td>10 sản phẩm</td><td>1.200.000 VNĐ</td>
                                     </tr>
                                     
-                                    <tr class="subtable">
-                                        <td></td>
-                                        <td colspan="4">
-                                            <table>
-                                                <tr>
-                                                    <td>Áo sơ mi nam</td>
-                                                    <td>2</td>
-                                                    <td>240.000 VNĐ</td>
-                                                </tr>
-                                                
-                                                <tr>
-                                                    <td>Áo sơ mi nam</td>
-                                                    <td>2</td>
-                                                    <td>240.000 VNĐ</td>
-                                                </tr>
-                                                
-                                                <tr>
-                                                    <td>Áo sơ mi nam</td>
-                                                    <td>2</td>
-                                                    <td>240.000 VNĐ</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
                                     
-                                    <tr>
-                                        <td><i class="fa fa-angle-down"></i></td>
+                                    <tr class="receipt-detail">
+                                        <td><i class="fa fa-angle-down detail-down"></i></td>
                                         <td>1</td><td>16/11/2015</td>
                                         <td>10 sản phẩm</td><td>1.200.000 VNĐ</td>
-                                    </tr>
-                                    
-                                    <tr class="subtable">
-                                        <td></td>
-                                        <td colspan="4">
-                                            <table>
-                                                <tr>
-                                                    <td>Áo sơ mi nam</td>
-                                                    <td>2</td>
-                                                    <td>240.000 VNĐ</td>
-                                                </tr>
-                                                
-                                                <tr>
-                                                    <td>Áo sơ mi nam</td>
-                                                    <td>2</td>
-                                                    <td>240.000 VNĐ</td>
-                                                </tr>
-                                                
-                                                <tr>
-                                                    <td>Áo sơ mi nam</td>
-                                                    <td>2</td>
-                                                    <td>240.000 VNĐ</td>
-                                                </tr>
-                                            </table>
-                                        </td>
                                     </tr>
                                 </table>
                             </div>
@@ -308,13 +268,114 @@
                 	<form>
                     	<label>Email đăng kí <i class="cl-red">(*)</i></label>
                         <input type="text" placeholder="Nhập email bạn đăng kí vào đây để lấy lại mật khẩu"/>
-                        <label class="cl-red">Hiện thị lỗi ở đây</label>
+                        <label class="cl-red show_error">Hiện thị lỗi ở đây</label>
                         <button type="submit">Lấy lại mật khẩu</button>
                     </form>
                 </div>
                 
                 <div class="fm-foot">
                 
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="form-change-pass">
+        	<div class="form-main">
+            	<div class="fm-head">
+                	<span>Đổi mật khẩu</span>
+                    <i class="fa fa-times exit"></i>
+                </div>
+                
+                <div class="fm-body">
+                	<form>
+                        <label>Mật khẩu cũ</label>
+                        <input type="password" placeholder="Nhập mật khẩu cũ"/>
+                        <label>Mật khẩu mới</label>
+                        <input type="password" placeholder="Nhập mật khẩu mới"/>
+                        <label>Nhập lại mật khẩu</label>
+                        <input type="password" placeholder="Nhập lại mật khẩu mới"/>
+                        <label class="show_error">Hiển thị lỗi ở đây nha</label>
+                        <button type="button">Đổi mật khẩu</button>
+                    </form>
+                </div>
+                
+                <div class="fm-foot">
+                
+                </div>
+            </div>
+        </div>
+        
+        <div id="form-edit-info">
+        	<div class="form-main">
+            	<div class="fm-head">
+                	<span>Đổi thông tin cá nhân</span>
+                    <i class="fa fa-times exit"></i>
+                </div>
+                
+                <div class="fm-body">
+                	<form>
+                    	<label>Họ và tên <span class="cl-red">(*)</span></label>
+                        <div class="form-input">
+                        	<input type="text" placeholder="Nhập họ tên của bạn vào đây nha"/>
+                            <span class="cl-red">Họ tên không được để trống</span>
+                        </div>
+                        
+                        <label>Ngày sinh:</label>                        
+                        <div class="birth">
+                            Năm<select name="year-of-birth">
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                            </select>
+                            
+                            Tháng<select name="month-of-birth">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            Ngày<select name="day-of-birth">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                        
+                        <label>Địa chỉ <span class="cl-red">(*)</span></label>
+                        <div class="form-input">
+                        	<input type="text" placeholder="Nhập địa chỉ của bạn vào đây nha"/>
+                            <span class="cl-red">Địa chỉ không được để trống</span>
+                        </div>
+                        
+                        <label>Giới tính</label>
+                        <div class="gioitinh">
+                        	<input type="radio" name="gioi-tinh" value="1" checked="checked"/><span>Nam</span>
+                        </div>
+                        
+                        <div class="gioitinh">
+                        	<input type="radio" name="gioi-tinh" value="0"/><span>Nữ</span>
+                        </div>
+                        
+                        <div class="gioitinh">
+                            <input type="radio" name="gioi-tinh" value="-1"/><span>Khác</span>
+                        </div>
+                        <label>Số điện thoại <span class="cl-red">(*)</span></label>
+                        <input type="text"/>
+                        <label class="show_error">Lỗi tại đây</label>
+                        <button type="button">Lưu thông tin</button>
+                    </form>
+                </div>
+                
+                <div class="fm-foot">
                 </div>
             </div>
         </div>

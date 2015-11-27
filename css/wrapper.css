@@ -441,6 +441,15 @@ div.product-info table tr td button#add-to-card{
 	padding:10px 0;
 }
 
+.nav-actived{
+	display:block !important;
+	animation:slideInUp 1s 1;	
+}
+
+#nav-info>.nav-person-info{
+	display:none;
+}
+
 #nav-info>.nav-person-info table{
 	width:600px;
 	margin:auto;
@@ -511,8 +520,12 @@ div.product-info table tr td button#add-to-card{
 }
 
 /*=============================*/
+
+#nav-info>.nav-card-info{
+	display:none;
+}
+
 #nav-info>.nav-card-info table{
-	width:800px;
 	margin:auto;
 	border-collapse:0;
 	border-spacing:0;
@@ -520,6 +533,7 @@ div.product-info table tr td button#add-to-card{
 	border:2px dotted #ccc;
 	border-radius:5px;
 }
+
 #nav-info>.nav-card-info> table tr td.nav-card-info-title{
 	text-align:center;
 	color:#555;
@@ -534,6 +548,44 @@ div.product-info table tr td button#add-to-card{
 	padding:10px;
 	font-size:15px;
 	color:rgb(34, 194, 34);
+}
+
+#nav-info>.nav-card-info table tr td span.no-card{
+	margin-top:20px;
+	position:relative;
+	background:#f2f2f2;
+	text-transform:uppercase;
+	border-radius:10px;	
+	padding:10px;
+	font-size:20px;
+	text-align:center;
+	color:#900;
+	text-shadow:0 0 3px #f00, 0 0 4px #00FF00;
+}
+
+#nav-info>.nav-card-info table tr td span.go-home{
+	position:relative;
+	display:block;
+	text-align:right;
+}
+
+#nav-info>.nav-card-info table tr td span.go-home a{
+	color:#1f1f1f;
+	font-size:14px;
+}
+
+#nav-info>.nav-card-info table tr td span.go-home a:hover{
+	font-style:italic;
+	color:red;
+}
+
+#nav-info>.nav-card-info table tr.receipt-detail{
+	background:#f1f1f1;
+}
+
+#nav-info>.nav-card-info table tr.subtable td table thead tr td{
+	background:#9FC;
+	font-weight:bold;
 }
 
 #nav-info>.nav-card-info table tr td{
